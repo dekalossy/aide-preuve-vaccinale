@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aide | Preuve vaccinale</title>
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="assets/app.js" defer></script>
+	
+	<script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #e3edf7;
+         /*   height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+
+        }
+
+        h1{
+            font-family:sans-serif;
+            font-weight: normal;
+            font-size: 25px;
+            letter-spacing: 4px;
+            padding: 50px 0 100px;
+            color: #555;
+            text-align: center;
+            
+        }
+
+        .titre
+			{
+				width: 400px;
+				height: 150px;
+				margin: auto;
+				text-align: center;
+				line-height: 70px;
+				font-weight: bold;
+				font-size: 2.5rem;
+				margin-top: 50px;
+				color: #d3d3d3;
+				text-shadow: 1px 1px #fff, -1px -1px #444;
+			}
+
+        .social-media{
+            display: flex;
+            justify-content: center;
+        }
+
+        section  a{
+            display: flex;
+            background: #e3edf7;
+            height: 75px;
+            width: 75px;
+            margin: 0 15px;
+            border-radius: 8px;
+            align-items: center;
+            justify-content:center;
+            text-decoration: none;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+                        -6px -6px 10px -1px rgba(255, 255, 255, .7); 
+            border: 1px solid rgba(0, 0, 0, 0); 
+            transition: transform .5s;
+        }
+
+        .card-body a{
+            display: flex;
+            background: #e3edf7;
+            align-items: center;
+            justify-content:center;
+            color: #053a76;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+                        -6px -6px 10px -1px rgba(255, 255, 255, .7); 
+            border: 1px solid rgba(0, 0, 0, 0); 
+            transition: transform .5s;
+
+        }
+
+        .row-cols-1{
+            margin: 20px 15px;
+            justify-content:center;
+           
+        }
+
+        #footer,
+        .col {
+            display: flex;
+            background: #e3edf7;
+            margin: 7px 15px;
+            border-radius: 8px;
+            align-items: center;
+            justify-content:center;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+                        -6px -6px 10px -1px rgba(255, 255, 255, .7); 
+            border: 1px solid rgba(0, 0, 0, 0); 
+            transition: transform .5s;
+        }
+
+        .card{
+            background: #e3edf7;
+            border: none;
+        }
+
+        a i{
+            font-size: 35px;
+            color:#777;
+            transition: transform .5s;
+        }
+		
+		a img{
+			height: 35px;
+			width:35px;
+            transition: transform .5s;
+        }
+		
+		a .sipmi{
+			height: 25px;
+			width:50px;
+            transition: transform .5s;
+        }
+		
+		
+
+        a:hover,
+        .col:hover{
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2),
+                        inset -4px -4px 6px -1px rgba(255, 255, 255, .7),
+                        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                        0.5px 0.5px 0px rgba(0, 0, 0, .15),
+                        0px 12px 10px -10px rgba(0, 0, 0, .05); 
+            border: 1px solid rgba(0, 0, 0, .01); 
+            transform: translateY(2px);
+        }
+
+		a:hover img{
+            transform: scale(0.90);
+        }
+        a:hover i{
+            transform: scale(0.90);
+        }
+
+        a:hover .fa-facebook{
+            color: #3b5998;
+        }
+
+        a:hover .fa-twitter{
+            color: #00acee;
+        }
+
+        a:hover .fa-youtube{
+            color: #f00;
+        }
+
+        a:hover .fa-whatsapp{
+            color:#4fce5d;
+        }
+
+        a:hover .fa-instagram{
+            color: #f14843;
+        }
+
+        a:hover .fa-snapchat{
+            color: #fffc00;
+        }
+
+        
+      
+/***************************************************/
+       
+		
+		.divsearch{display:flex; align-items:center; justify-content:center}
+
+        .search {
+            margin-bottom: 30px;
+            border-radius: 25px;
+            box-shadow:inset 5px 5px 8px #cbced1, inset -5px -5px 8px #ffffff;
+            width:40%;
+			text-align:center;
+           
+        }
+
+        .search input {
+            border: none;
+            width: 80%;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            color: #555;
+            padding: 15px 10px 18px 5px;
+            transition: transform .5s;
+            text-align:center;
+           
+            
+        }
+
+        .search input:hover{
+            border: none;
+            transform: translateY(-3px);
+        }
+		
+		
+
+    </style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#031838">
+  <div class="container-fluid">
+    <p class="navbar-brand" style="color:#ed6b41">Aréna Dollard-Lasalle</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav  ms-auto">
+        <a class="nav-link" href="https://sx5.santepublique.rtss.qc.ca/" target="_blank">Sipmi</a>
+        <a class="nav-link" href="https://admin3.clicsante.ca/login" target="_blank">Clic Santé</a>
+		<a class="nav-link" href="https://app.isymbiose.ca/COMTL/" target="_blank">Isymbiose</a>
+        <!--a class="nav-link disabled">Disabled</a -->
+		<!--a href="https://faius.santepublique.rtss.qc.ca/" target="_blank" style="margin-right:20px"><img src="https://www.concordia.ca/ucactualites/central/nouvelles/2021/10/07/comptoir-ephemere-d-inscription-au-registre-de-vaccination/_jcr_content/parsys/image.img.png/1633637814005.png" alt="Logo" title="SIPMI"/></a>
+		<a href="https://app.isymbiose.ca/COMTL/?ver=20211124.1" target="_blank" style="margin-right:20px"><img src="https://scontent.fykz2-1.fna.fbcdn.net/v/t1.18169-9/1510805_581511421938435_537685001_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=JlHQsIlr4eAAX9YHK2U&_nc_ht=scontent.fykz2-1.fna&oh=00_AT-4HLlmsk561lTrbLIn6W1Z4PtVjT4zVJ-s3EzI4ArJuw&oe=62053957" alt="Logo ISymbiose" title="ISymbiose"/></a>
+        <a href="https://admin3.clicsante.ca/login" target="_blank" style="margin-right:20px"><img src="https://static.trimoz.com/clicsante/images/logo.png" alt="Logo ClickSanté" title="ClickSanté"/></a  -->
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!--h1 class="titre">OUTIL D'AIDE</!--h1 -->
+    <h2 class="titre">OUTIL D'AIDE</h2>
+	
+	
+    <div id="typed-strings">
+        <p>Vérification <strong>PREUVES VACCINALES</strong> hors Québec...</p>
+        <p>Fournir  <span style="color:#ed6b41;"><em>le nom du pays, de la province, ou de l'État</span></em> </p>
+    </div>
+  
+    <span id="typed" style="color:#031838; background-color:#cfdceb"></span>
+
+
+    <div x-data="donneespays()">
+
+		<div class="divsearch" >
+            <div class="search" >
+                <i class="fa fa-search" aria-hidden="true" style="color:#ed6b41;"></i>
+                <input type="text" x-model="search" placeholder="Recherche..." > 
+                
+            </div>
+		</div>
+
+        <!--ul>
+            <template x-for="pays in filteredPays" :key="pays.nom">
+                <li x-text= " 'Résultat trouvé pour '+ pays.nom + ' : '+ pays.appli"></li>
+    
+            </template>
+        </ul-->
+
+        <div class="row row-cols-1 row-cols-md-4 g-4" >
+            <template x-for="pays in filteredPays" :key="pays.nom" >
+                <div class="col" >
+                    <div class="card h-100" >
+					
+					  <!-- 1- Using old school string concatenation 
+					  <img :src="'images/' + pays.drapeau" class="card-img-top" alt="vaccin">  
+					  -->
+					  
+					  <!-- 2- Using template strings -->
+					  <img :src="`images/${pays.drapeau}`"  class="card-img-top" alt="vaccin">
+					  
+                      <div class="card-body">
+                           <h5 class="card-title" x-text="pays.nom" style="color:#031838;"></h5>
+						   
+                           <p class="card-text" x-text="pays.commentaire"></p>
+                           <a x-bind:href="pays.lien" class="btn btn-primary" x-text="pays.appli" target="_blank" style="font-size: .7em;"></a>
+                      </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+    </div>
+
+
+    <section class="social-media">
+        
+        <!--a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a-->
+		<a href="https://faius.santepublique.rtss.qc.ca/" target="_blank"><img class="sipmi" src="images/sipmi.jpg" title="SIPMI"></i></a>
+		
+		<!--a href="https://faius.santepublique.rtss.qc.ca/" target="_blank"><img src="https://www.concordia.ca/ucactualites/central/nouvelles/2021/10/07/comptoir-ephemere-d-inscription-au-registre-de-vaccination/_jcr_content/parsys/image.img.png/1633637814005.png" alt="Logo" title="SIPMI"/></a-->
+		<a href="https://app.isymbiose.ca/COMTL/?ver=20211124.1" target="_blank"><img src="images/isymbiose.png" alt="Logo ISymbiose" title="ISymbiose"/></a>
+        <a href="https://admin3.clicsante.ca/login" target="_blank"><img src="images/clicsante.png" alt="Logo ClicSanté" title="ClicSanté"/></a>
+    
+</section>
+
+    <div id="footer" class="fixed-bottom">
+        Dollard Lasalle 
+        <span id="copyright" style="color:#031838; font-weight:bold">
+          &copy; 2021 || Taliby_FOFANA | Carole_Blanchard | Alexandra | Pédro | Lissett | Diane 
+        </span>
+        <span id="help-link">
+          &#183;
+          <a id="help" href="#">Centre d'aide</a>
+        </span>
+      </div>
+    </div>
+
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          typeSpeed: 60,
+          cursorChar: '_',
+          backSpeed: 0,
+          loop: true
+        });
+      </script>
+
+<!-- .normalize('NFD').replace(/[\u0300-\u036f]/g, '') permet de supprimer les accents
+ https://qastack.fr/programming/990904/remove-accents-diacritics-in-a-string-in-javascript -->
+</body>
+</html>
